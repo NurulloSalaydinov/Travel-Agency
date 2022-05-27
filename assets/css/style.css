@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    object-fit: cover;
+}
+
+body {
+    height: 150vh;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background: transparent !important;
+}
+
+.navbar.scroll {
+    background: rgba(0,0,0,0.8) !important;
+}
+
+section {
+    width: 100%;
+    min-height: auto;
+    background: #eee;
+}
+
+#home {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./bg/5.jpg');
+}
+
+.home-title {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-title:before {
+    content: attr(data-title);
+}
+
+.home-desc {
+    color: #fff;
+    font-size: 1em;
+    max-width: 80%;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-desc:before {
+    content: attr(data-title);
+}
+
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 2.8em;
+    }
+    .home-desc {
+        font-size: 0.9em;
+        font-weight: 600;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 468px) {
+    .home-title {
+        font-size: 2em;
+    }
+    .home-desc {
+        font-size: 0.7em;
+    }
+}
+
+/* pop titles */
+
+.pop-title {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pop-subtitle {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.block {
+    width: 25%;
+    height: 200px;
+    margin: 5px 20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 10px 10px 21px #828282,
+    -10px -10px 21px #ffffff;
+}
+
+.block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.block::before {
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+}
+
+.block:hover {
+    box-shadow: 0px 0px 15px #828282,
+    -1px -1px 15px #ffffff;                
+}
+
+.block .watermark {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    font-weight: 600;
+    position: absolute;
+    transform: scale(0);
+    align-items: center;
+    justify-content: center;
+}
+
+.block:hover .watermark {
+    transform: scale(1);
+}
+
+.block .watermark .bg-dark {
+    width: 120px;
+    height: 120px;
+    color: #000;
+    display: flex;
+    font-weight: 700;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.5);
+}
+
+.block .watermark .bg-dark::after {
+    content: attr(data-target);
+}
+
+.image-content {
+    width: 32%;
+    height: 270px;
+    overflow: hidden;
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-content:hover img {
+    transform: scale(1.15);
+}
+
+/* + fix container */
+
+@media (max-width: 1060px) {
+    .block {
+        width: 27%;
+    }
+    .image-content {
+        width: 35%;
+    }
+    .container {
+        width: 90% !important;
+        max-width: 90% !important;
+        margin: auto;
+    }
+}
+
+@media (max-width: 960px) {
+    .block {
+        width: 30%;
+    }
+    .image-content {
+        width: 40%;
+    }
+    .container {
+        width: 90% !important;
+        max-width: 90% !important;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .block {
+        width: 40%;
+    }
+    .image-content {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        width: 90% !important;
+        max-width: 90% !important;
+        margin: auto;
+    }
+}
+
+@media (max-width: 668px) {
+    .block {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        width: 90% !important;
+        max-width: 90% !important;
+        margin: auto;
+    }
+}
+
+/* end fix */
