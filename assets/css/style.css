@@ -195,6 +195,20 @@ section {
     transform: scale(1.15);
 }
 
+.iframes {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.iframes iframe {
+    width: 32%;
+    height: auto;
+    min-height: 275px;
+}
+
 /* + fix container */
 
 @media (max-width: 1060px) {
@@ -203,6 +217,9 @@ section {
     }
     .image-content {
         width: 35%;
+    }
+    .iframes iframe {
+        width: 47%;
     }
     .container {
         width: 90% !important;
@@ -233,6 +250,9 @@ section {
         width: 100%;
         height: auto;
     }
+    .iframes iframe {
+        width: 90%;
+    }
     .container {
         width: 90% !important;
         max-width: 90% !important;
@@ -244,6 +264,9 @@ section {
     .block {
         width: 100%;
         height: auto;
+    }
+    .iframes iframe {
+        width: 96%;
     }
     .container {
         width: 90% !important;
