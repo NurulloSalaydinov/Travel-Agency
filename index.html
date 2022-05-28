@@ -18,11 +18,11 @@
 
 <body>
 
-    <nav class="navbar is-dark px-5 is-sticky">
+    <nav class="navbar is-dark px-5 py-2 is-sticky">
 
-        <div class="navbar-brand py-3">
+        <div class="navbar-brand">
             <a href="#">
-                <img src="assets/img/uzlogo_white.png" width="180px" height="80px" alt="">
+                <img src="assets/img/uzlogo_white.png" class="logo-image" alt="">
             </a>
 
             <a role="button" class="navbar-burger" style="top: 15px;" aria-label="menu" aria-expanded="false"
@@ -33,18 +33,20 @@
             </a>
         </div>
 
-        <div class="navbar-menu">
+        <div id="navbarBasicExample" class="navbar-menu">
 
             <div class="navbar-end">
                 <a href="#city" class="navbar-item">Shaharlar</a>
                 <a href="#photo" class="navbar-item">Galereya</a>
                 <a href="#why_choose_us" class="navbar-item">Ma'lumotlar</a>
-                <a href="#" class="navbar-item">
-                    <select class="select">
-                        <option value="uz">Uz</option>
-                        <option value="en">En</option>
-                        <option value="ru">Ru</option>
-                    </select>
+                <a href="#" class="navbar-item control">
+                    <div class="select">
+                        <select>
+                            <option value="uz">Uz</option>
+                            <option value="en">En</option>
+                            <option value="ru">Ru</option>
+                        </select>
+                    </div>
                 </a>
             </div>
 
@@ -53,20 +55,25 @@
     </nav>
 
     <!-- section home -->
-    <section id="home">
+    <section class="py-4" id="home">
         <div class="container">
             <h1 class="home-title" data-title="O'zbek me'morchiligi"></h1>
-            <p class="home-desc" data-title="Me’morchilik ijodining gullab-yashnashi O‘zbekiston Buyuk Ipak yo‘lining markazi bo‘lgan o‘rta asrlar davriga to‘g‘ri keladi. XIV asrdan boshlab bu yerda dunyoga mashhur me’morchilik yodgorliklari – Samarqanddagi Registon maydoni, Shohi-Zinda majmuasi, Bibixonim masjidi va Gur-Amir maqbarasi, Shahrisabzdagi Oqsaroy, Buxorodagi Poyi kalon va Labi Hovuz, Xivada minora va madrasalar barpo etildi."></p>
+            <p class="home-desc"
+                data-title="Me’morchilik ijodining gullab-yashnashi O‘zbekiston Buyuk Ipak yo‘lining markazi bo‘lgan o‘rta asrlar davriga to‘g‘ri keladi. XIV asrdan boshlab bu yerda dunyoga mashhur me’morchilik yodgorliklari – Samarqanddagi Registon maydoni, Shohi-Zinda majmuasi, Bibixonim masjidi va Gur-Amir maqbarasi, Shahrisabzdagi Oqsaroy, Buxorodagi Poyi kalon va Labi Hovuz, Xivada minora va madrasalar barpo etildi.">
+            </p>
         </div>
     </section>
     <!-- end section home -->
     <!-- section start -->
-    <section id="start">
+    <section class="py-4" id="start">
         <div class="container">
             <div class="py-6 has-text-centered has-text-dark">
                 <h1 class="pop-title">O‘zbekistonni o‘zingiz uchun kashf eting!</h1>
-                <h3 class="pop-subtitle">O‘zbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda to‘plangan, quyosh yil bo‘yi porlab, tabiatning betakrorligi va odamlarning yuraklari tozaligi buning nishonasidir</h3>
-                <h4 class="pop-subtitle has-text-grey">Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan kutib olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi.</h4>
+                <h3 class="pop-subtitle">O‘zbekiston Sharqning sirli mamlakatidir. U yerda tarixlar afsonalarda
+                    to‘plangan, quyosh yil bo‘yi porlab, tabiatning betakrorligi va odamlarning yuraklari tozaligi
+                    buning nishonasidir</h3>
+                <h4 class="pop-subtitle has-text-grey">Ushbu muborak zaminga kelgan har bir mehmon xursandchilik bilan
+                    kutib olinadi va bir marta tashrif buyurgan kishi yana qaytib kelishni xohlaydi.</h4>
                 <br>
                 <button class="button is-primary py-3 px-6">Batafsil</button>
             </div>
@@ -74,7 +81,7 @@
     </section>
     <!-- end section start -->
     <!-- section city -->
-    <section id="city">
+    <section class="py-4" id="city">
         <div class="container has-text-centered">
             <h3 class="pop-subtitle is-size-3 has-text-dark">O'zbekiston shaharlari</h3>
             <h3 class="pop-subtitle is-size-5">Sayyohlar uchun mashhur yo'nalish</h3>
@@ -86,7 +93,7 @@
                     </div>
                     <img src="assets/img/Samarqand.jpg" alt="" />
                 </div>
-                
+
                 <div class="block">
                     <div class="watermark">
                         <div class="bg-dark" data-target="Andijan"></div>
@@ -100,7 +107,7 @@
                     </div>
                     <img src="assets/img/Termiz.jpg" alt="" />
                 </div>
-                
+
                 <div class="block">
                     <div class="watermark">
                         <div class="bg-dark" data-target="Xiva"></div>
@@ -114,7 +121,7 @@
                     </div>
                     <img src="assets/img/tashkent.jpg" alt="" />
                 </div>
-                
+
                 <div class="block">
                     <div class="watermark">
                         <div class="bg-dark" data-target="Mo'ynoq"></div>
@@ -128,7 +135,7 @@
                     </div>
                     <img src="assets/img/zomin.jpg" alt="" />
                 </div>
-                
+
                 <div class="block">
                     <div class="watermark">
                         <div class="bg-dark" data-target="Buxoro"></div>
@@ -141,7 +148,7 @@
     </section>
     <!-- end section city -->
     <!-- section photo -->
-    <section id="photo">
+    <section class="py-4" id="photo">
         <div class="container has-text-centered">
             <h3 class="pop-subtitle is-size-3 has-text-dark">Fotogalareya</h3>
             <h3 class="pop-subtitle is-size-5">Sayyohlar uchun mashhur joylar</h3>
@@ -170,75 +177,69 @@
     </section>
     <!-- end section photo -->
     <!-- section video -->
-    <section id="video">
+    <section class="py-4" id="video">
         <div class="container has-text-centered py-3">
             <h3 class="pop-subtitle is-size-3 has-text-dark">Video galareya</h3>
             <h3 class="pop-subtitle is-size-5">Biz bilan sayohat qiling</h3>
             <br>
             <div class="iframes">
-                <iframe src="https://www.youtube.com/embed/xlKxZweINyE" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/xlKxZweINyE" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/xlKxZweINyE" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/xlKxZweINyE" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/xlKxZweINyE" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/xlKxZweINyE" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </section>
     <!-- end section video -->
     <!-- section why_choose_us -->
-    <section id="why_choose_us">
+    <section class="py-4" id="why_choose_us">
         <div class="container has-text-centered py-3">
-            <h3 class="pop-subtitle is-size-3 has-text-dark">Bizning afzaliglarimiz</h3>
+            <h1 class="pop-subtitle is-size-3 has-text-dark">Bizning afzaliglarimiz</h1>
             <h3 class="pop-subtitle is-size-5">Bizning sayyohlar uchun maxsus</h3>
             <div class="columns py-4">
                 <div class="column is-4">
                     <div class="card pt-5">
-                        <img
-                        style="width: 100% !important;height: 150px !important;object-fit: contain"
-                        src="assets/img/plane.png"
-                        alt=""
-                        />
+                        <img style="width: 100% !important;height: 150px !important;object-fit: contain"
+                            src="assets/img/plane.png" alt="" />
                         <div class="card-content">
                             <hr>
                             <h1 class="pop-title mb-1 is-size-4">Transport hizmati</h1>
-                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita repudiandae.</h3>
+                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium
+                                expedita repudiandae.</h3>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="column is-4">
                     <div class="card pt-5">
-                        <img
-                        style="width: 100% !important;height: 150px !important;object-fit: contain"
-                        src="assets/img/star.png"
-                        alt=""
-                        />
+                        <img style="width: 100% !important;height: 150px !important;object-fit: contain"
+                            src="assets/img/star.png" alt="" />
                         <div class="card-content">
                             <hr>
                             <h1 class="pop-title mb-1 is-size-4">5 yulduzli mehmonxona</h1>
-                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita repudiandae</h3>
+                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium
+                                expedita repudiandae</h3>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="column is-4">
                     <div class="card pt-5">
-                        <img
-                        style="width: 100% !important;height: 150px !important;object-fit: contain"
-                        src="assets/img/safe.png"
-                        alt=""
-                        />
+                        <img style="width: 100% !important;height: 150px !important;object-fit: contain"
+                            src="assets/img/safe.png" alt="" />
                         <div class="card-content">
                             <hr>
                             <h1 class="pop-title mb-1 is-size-4">Havfsizlik</h1>
-                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium expedita repudiandae</h3>
+                            <h3 class="pop-smalltitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Deserunt officiis hic totam ducimus numquam eaque, vitae eius dolores praesentium
+                                expedita repudiandae</h3>
                         </div>
                     </div>
                 </div>
@@ -246,7 +247,134 @@
         </div>
     </section>
     <!-- end section why_choose_us -->
-    
+    <!-- section about us -->
+    <section class="py-4" id="aboutus">
+        <div class="container has-text-centered py-3">
+            <h3 class="pop-subtitle is-size-3 has-text-dark">Biz haqimizda</h3>
+            <h3 class="pop-subtitle is-size-5">Biz bilan sayohat qiling</h3>
+            <div class="columns mt-5 box">
+                <div class="column is-6 centered-mutually">
+                    <h3 class="pop-title is-size-5 has-text-dark">Bizning Offis</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ipsam non iste ducimus
+                        delectus incidunt illum voluptates, consequatur, similique molestias repudiandae ex doloremque
+                        consequuntur facilis praesentium sequi laboriosam? Numquam neque rem sed itaque. Fugit ut in,
+                        recusandae molestias ea tempore impedit magnam magni cum, nihil commodi illum modi omnis animi!
+                    </p>
+                </div>
+                <div class="column is-6 centered-mutually">
+                    <img src="assets/img/photo/sme-comp-office-desktop-stage.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section about us -->
+    <!-- section contact -->
+    <section class="py-4" id="contact">
+        <div class="container has-text-centered">
+            <h1 class="pop-subtitle is-size-3 has-text-dark">Savol va takliflar uchun</h1>
+            <h3 class="pop-subtitle is-size-5">Biz bilan sayohat qiling</h3>
+
+            <div class="columns box mt-5 is-flex is-flex-wrap-wrap">
+
+                <div class="column is-6">
+
+                    <div class="field">
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" placeholder="Ism Familiya">
+                            <span class="icon is-small is-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control has-icons-left">
+                            <input class="input" type="number" placeholder="Telefon raqam">
+                            <span class="icon is-small is-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/></svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control has-icons-left">
+                            <input class="input" type="email" placeholder="Email">
+                            <span class="icon is-small is-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="column is-6">
+
+                    <div class="field">
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Savol va Takliflar uchun" rows="5"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="column is-12">
+                    
+                    <div class="field">
+                        <div class="control">
+                            <button class="button is-primary">Yuborish</button>
+                        </div>
+                    </div>
+                
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end section contact -->
+    <!-- footer -->
+    <section id="footer" class="pt-6">
+        <footer class="footer has-background-dark pb-6">
+            <div class="container py-4">
+                <div class="columns is-flex is-flex-wrap-wrap">
+                    <div class="column">
+                        <h1 class="pop-title has-text-light">Sayyohlar uchun</h1>
+                        <h3 class="pop-subtitle has-text-grey">Ichki Turizm</h3>
+                        <h3 class="pop-subtitle has-text-grey">Tur opertorlarining reyestri</h3>
+                        <h3 class="pop-subtitle has-text-grey">Online so'rovnoma</h3>
+                        <h3 class="pop-subtitle has-text-grey">O'zbekiston xaritasi</h3>
+                    </div>
+                    <div class="column">
+                        <h1 class="pop-title has-text-light">Biz bilan aloqa</h1>
+                        <a href="tel:+998971619717" class="pop-subtitle has-text-grey">+998971619717</a>
+                        <h3 class="pop-subtitle has-text-grey">
+                            <svg style="width: 20px;height: 20px;fill: grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+                            Andijon, Xo'jaobod, Yangi hayot MFY, 75-uy
+                        </h3>
+
+                        <div class="social-sites">
+                            <a href="">
+                                <svg style="width: 30px;height: 30px;fill: grey;margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg>
+                            </a>
+                            <a href="">
+                                <svg style="width: 30px;height: 30px;fill: grey;margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                            </a>
+                            <a href="">
+                                <svg style="width: 30px;height: 30px;fill: grey;margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                            </a>
+                            <a href="">
+                                <svg style="width: 30px;height: 30px;fill: grey;margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                            </a>
+                            <a href="">
+                                <svg style="width: 30px;height: 30px;fill: grey;margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- end footer -->
     <script src="assets/js/app.js"></script>
 </body>
 
